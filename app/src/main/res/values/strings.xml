@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GRE App</string>
+
+    <string-array name="names">
+        <item>Common</item>
+        <item>Basic</item>
+        <item>Advanced</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+</resources>

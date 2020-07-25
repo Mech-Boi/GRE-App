@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Bookmarks">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DB6CE8"
+
+        >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_arrow"
+            android:padding="3dp"
+            android:background="#DB6CE8"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back_btn"
+            android:text="Community Words"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/rl1"
+    android:layout_height="60dp"
+    android:id="@+id/rl10"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Here you will get words added by all users around globe."
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:textSize="17sp"/>
+
+</RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBartodo"
+        style="?android:attr/progressBarStyle"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/rl10"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rbookmarks"/>
+</RelativeLayout>

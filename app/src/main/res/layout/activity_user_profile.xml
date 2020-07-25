@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E687F6"
+        >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_arrow"
+            android:padding="3dp"
+            android:background="#E687F6"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back_btn"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/userprofile_image"
+                android:layout_width="150dp"
+                android:background="@drawable/network"
+                android:layout_height="150dp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/ll1">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Username :"
+                android:textSize="20dp"
+                android:textColor="@android:color/tertiary_text_light"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/userprofile_username"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl3">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textSize="20dp"
+                android:textColor="@android:color/tertiary_text_light"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/userprofile_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl4"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:padding="5dp"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:background="@drawable/round_btn4"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_profile"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:padding="5dp"
+            android:text="LOGOUT"
+            android:textAllCaps="false"
+            android:background="@drawable/round_btn4"
+            android:backgroundTint="#F97897"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            />
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
